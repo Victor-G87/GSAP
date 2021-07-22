@@ -1,0 +1,44 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-container {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.content {
+  width: 60%;
+  padding-top: 50px;
+}
+
+.img-container {
+  margin: 0 0 50px;
+}
+.img-container img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
