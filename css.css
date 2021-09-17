@@ -41,3 +41,15 @@ h1 .box {
     height: 100vw;
     z-index: -1;
 }
+
+.center-div
+{
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
