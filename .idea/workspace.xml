@@ -23,6 +23,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1vgsZ1UonG2nE6o3ZhRa3NBsq8O" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -68,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626995118262</updated>
       <workItem from="1626995119767" duration="373000" />
-      <workItem from="1631766333155" duration="4253000" />
+      <workItem from="1631766333155" duration="4559000" />
     </task>
     <servers />
   </component>
