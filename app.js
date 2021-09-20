@@ -13,3 +13,7 @@ words.forEach(word => {
     tl.to('.text', {duration: 1, text: word})
     masterTl.add(tl)
 })
+
+tl = new TimelineMax({repeat: -1});
+tl.fromTo(".circle", 1, {drawSVG:"0%"}, {drawSVG:"100%", immediateRender:false, ease:Power1.easeInOut, rotation:360, transformOrigin:"50% 50%", stroke:"#29B6F6"})
+    .fromTo(".circle", 1.5, {drawSVG:"100%"}, {drawSVG:"0%", immediateRender:false, ease:Power1.easeInOut, rotation:-720, transformOrigin:"50% 50%", stroke:"#FF4081"})

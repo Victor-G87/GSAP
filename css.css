@@ -46,7 +46,7 @@ h1 .box {
 .center-div
 {
     display: inline-flex;
-    /*position: absolute;*/
+    position: absolute;
     margin: auto;
     top: 10px;
     left: 10px;
