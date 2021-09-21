@@ -1,68 +1,153 @@
-var html = document.documentElement;
-var body = document.body;
+import SVG from "https://cdn.skypack.dev/svg.js";
+import {
+  spline,
+  map
+} from "https://cdn.skypack.dev/@georgedoescode/generative-utils@1.0.0";
+import { Vector2D } from "https://cdn.skypack.dev/@georgedoescode/vector2d@1.0.1";
+import debounce from "https://cdn.skypack.dev/debounce@1.2.1";
 
-var scroller = {
-  target: document.querySelector("#scroll-container"),
-  ease: 0.05, // <= scroll speed
-  endY: 0,
-  y: 0,
-  resizeRequest: 1,
-  scrollRequest: 0,
-};
+let mousePos = new Vector2D(0, 0);
+window.mouseHasMoved = false;
 
-var requestId = null;
+const svg = SVG(document.querySelector("svg"));
+const path = document.getElementById("baseBtnPath");
 
-TweenLite.set(scroller.target, {
-  rotation: 0.01,
-  force3D: true
+const pointOrigins = pointsInPath(path, 32);
+const points = pointsInPath(path, 32);
+const bgPoints = pointsInPath(path, 32);
+
+let btnPathData = spline(points, 1, true);
+let bgPathData = spline(bgPoints, 1, true);
+
+const bgPath = svg
+  .path(btnPathData)
+  .fill("#A78BFA")
+  .attr("id", "bgPath")
+  .attr("filter", "url(#shadow)");
+const btnPath = svg
+  .path(btnPathData)
+  .fill("url(#gradient)")
+  .attr("id", "btnPath");
+
+const circles = [];
+
+points.forEach((p) => {
+  circles.push(
+    svg.circle(4).cx(p.x).cy(p.y).fill("#4C1D95").attr("class", "debug-dot")
+  );
 });
 
-window.addEventListener("load", onLoad);
+function pointsInPath(path, numPoints = 10) {
+  const pathLength = path.getTotalLength();
+  const step = pathLength / numPoints;
+  const points = [];
 
-function onLoad() {    
-  updateScroller();  
-  window.focus();
-  window.addEventListener("resize", onResize);
-  document.addEventListener("scroll", onScroll); 
+  for (let i = 0; i < pathLength; i += step) {
+    points.push(path.getPointAtLength(i));
+  }
+
+  return points;
 }
 
-function updateScroller() {
-  
-  var resized = scroller.resizeRequest > 0;
-    
-  if (resized) {    
-    var height = scroller.target.clientHeight;
-    body.style.height = height + "px";
-    scroller.resizeRequest = 0;
-  }
-      
-  var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+const pt = svg.node.createSVGPoint();
+function transformCoords(evt) {
+  pt.x = evt.clientX;
+  pt.y = evt.clientY;
 
-  scroller.endY = scrollY;
-  scroller.y += (scrollY - scroller.y) * scroller.ease;
+  return pt.matrixTransform(svg.node.getScreenCTM().inverse());
+}
 
-  if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
-    scroller.y = scrollY;
-    scroller.scrollRequest = 0;
+const range = 40;
+
+(function animate() {
+  if (window.mouseHasMoved) {
+    points.forEach((p, index) => {
+      const point = new Vector2D(pointOrigins[index].x, pointOrigins[index].y);
+      const d = Vector2D.sub(point, mousePos);
+      const l = Math.hypot(d.x, d.y);
+      let y;
+
+      if (l < range && !p.reset) {
+        point.sub(new Vector2D(d.x, -(d.y * 0.675)));
+        y = point.y;
+      } else {
+        y = pointOrigins[index].y;
+      }
+
+      p.y += (y - p.y) * 0.1;
+
+      circles[index].attr("cy", p.y);
+    });
+
+    bgPoints.forEach((p, index) => {
+      const point = new Vector2D(pointOrigins[index].x, pointOrigins[index].y);
+      const d = Vector2D.sub(point, mousePos);
+      const l = Math.hypot(d.x, d.y);
+      let y;
+
+      if (l < range && !p.reset) {
+        point.sub(new Vector2D(d.x, -(d.y * 0.675)));
+        y = point.y;
+      } else {
+        y = pointOrigins[index].y;
+      }
+
+      p.y += (y - p.y) * 0.05;
+    });
   }
-  
-  TweenLite.set(scroller.target, { 
-    y: -scroller.y 
+
+  bgPathData = spline(bgPoints, 1, true);
+  bgPath.attr("d", bgPathData);
+
+  btnPathData = spline(points, 1, true);
+  btnPath.attr("d", btnPathData);
+
+  requestAnimationFrame(animate);
+})();
+
+window.addEventListener("mousemove", (e) => {
+  const { x, y } = transformCoords(e);
+
+  mousePos.x = x;
+  mousePos.y = y;
+
+  mouseHasMoved = true;
+
+  points.forEach((p, index) => {
+    const point = new Vector2D(pointOrigins[index].x, pointOrigins[index].y);
+    const d = Vector2D.sub(point, mousePos);
+    const l = Math.hypot(d.x, d.y);
+
+    if (l < range) {
+      p.reset = false;
+      debounce(() => {
+        p.reset = true;
+      }, 200)();
+    } else {
+      p.reset = false;
+    }
   });
-  
-  requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
-}
 
-function onScroll() {
-  scroller.scrollRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
-  }
-}
+  bgPoints.forEach((p, index) => {
+    const point = new Vector2D(pointOrigins[index].x, pointOrigins[index].y);
+    const d = Vector2D.sub(point, mousePos);
+    const l = Math.hypot(d.x, d.y);
 
-function onResize() {
-  scroller.resizeRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
+    if (l < range) {
+      p.reset = false;
+      debounce(() => {
+        p.reset = true;
+      }, 200)();
+    } else {
+      p.reset = false;
+    }
+  });
+});
+
+document.querySelector(".debug-text").addEventListener("click", (e) => {
+  if (document.body.classList.contains("debug")) {
+    document.body.classList.remove("debug");
+  } else {
+    document.body.classList += "debug";
   }
-}
+});
