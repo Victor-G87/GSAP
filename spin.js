@@ -8,3 +8,9 @@ for ( let i=0; i<list.length; i++){
         list[i].className = 'list active';
     }
 }
+
+let menuToggle = document.querySelectorAll('.toggle');
+let navi =document.querySelectorAll('.navi')
+menuToggle.onclick = function (){
+    menuToggle.classList.toggle('active')
+}
