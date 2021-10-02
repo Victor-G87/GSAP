@@ -1,7 +1,7 @@
 const grid = document.querySelector('.grid');
 const dotSize = 1;
 const padding = 40;
-const sizes = [0, 0, 0, 0, 1.5, 1.5, 1.5, 1.5, 3, 4, 10];
+const sizes = [0, 0, 0, 0, 1.5, 1.5, 1.5, 1.5, 3, 4, 13];
 let animationReq;
 let increment = 0;
 let dots = [];

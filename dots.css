@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.japan{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #eaeef0;
+    position: absolute;
+    z-index: 199;
+    font-size: 6em;
+    margin: auto;
+    top: 1em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+
+
 .grid {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: rgba(11, 6, 19, 0.94);
+    background: rgb(28, 28, 28);
 }
 
 .dot {
@@ -10,13 +39,20 @@
     width: 1px;
     height: 1px;
     border-radius: 260px;
-    /*background: linear-gradient(-45deg, #ffffff, #ffa4c6, #b1ebff, #b0ffeb);*/
+    /*background: linear-gradient(-45deg, #2c2c2c, #464646, #464646, #343434);*/
     /*background-size: 400% 400%;*/
     /*animation: gradient 15s ease infinite;*/
     background: #4b4b4b;
     transform-origin: center center;
     transition: transform 0.6s ease;
+    filter: blur(.2px) saturate(130%);
+    z-index: 12;
+    pointer-events: none;
+
+
+
 }
+
 
 
 /*@keyframes gradient {*/
@@ -30,3 +66,159 @@
 /*        background-position: 0% 50%;*/
 /*    }*/
 /*}*/
+
+
+
+@keyframes moveDown {
+    from {
+        animation-timing-function: linear;
+        opacity: 1;
+        transform: translateX(-1500px) translateY(-1500px) rotate(45deg);
+    }
+    to {
+        animation-timing-function: linear;
+        opacity: 1;
+        transform: translateX(1500px) translateY(1500px) rotate(45deg);
+    }
+}
+@keyframes moveUp {
+    from {
+        animation-timing-function: linear;
+        opacity: 1;
+        transform: translateX(1500px) translateY(1500px) rotate(45deg);
+    }
+    to {
+        animation-timing-function: linear;
+        opacity: 1;
+        transform: translateX(-1500px) translateY(-1500px) rotate(45deg);
+    }
+}
+.line1 {
+    height: 240px;
+    background: #f5be55;
+    width: 900px;
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    opacity: 0;
+    animation-name: moveDown;
+    animation-duration: 9s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    z-index: 9;
+    border-bottom-left-radius: 180px;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+}
+
+.line1-1 {
+    height: 240px;
+    background: #C8E6C9;
+    width: 300px;
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    opacity: 0;
+    animation-name: moveDown;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    z-index: 9;
+    border-bottom-left-radius: 180px;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+}
+
+.line2 {
+    height: 240px;
+    background: #7f99ff;
+    width: 800px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0;
+    animation-name: moveUp;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    z-index: 9;
+    border-bottom-left-radius: 180px;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+}
+
+.line2-2 {
+    height: 240px;
+    background: #ff80fa;
+    width: 700px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0;
+    animation-name: moveUp;
+    animation-duration: 12s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    z-index: 9;
+    border-bottom-left-radius: 180px;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+}
+
+.line3 {
+    height: 240px;
+    background: #82ff86;
+    width: 600px;
+    position: absolute;
+    top: -60px;
+    bottom: -60px;
+    opacity: 0;
+    animation-name: moveDown;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    z-index: 9;
+    border-bottom-left-radius: 180px;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+
+}
+
+
+.line3-3 {
+    height: 280px;
+    background: #faf7f6;
+    width: 500px;
+    position: absolute;
+    top: -60px;
+    bottom: -60px;
+    opacity: 0;
+    animation-name: moveDown;
+    animation-duration: 40s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    z-index: 9;
+    border-bottom-left-radius: 180px;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+
+}
+
+
+
+.gradiant {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0);
+    background: linear-gradient(312deg, rgba(0,0,0,1) 0%, rgba(0,0,5,1) 29%, rgba(9,9,121,0) 100%);
+    position: absolute;
+    z-index: 11;
+    pointer-events: none;
+
+}
