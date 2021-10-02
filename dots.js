@@ -49,3 +49,4 @@ function animateGrid() {
 
     animationReq = window.requestAnimationFrame(animateGrid);
 }
+

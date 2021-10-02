@@ -2,7 +2,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: #120f1e;
+    background: rgba(11, 6, 19, 0.94);
 }
 
 .dot {
@@ -10,7 +10,22 @@
     width: 1px;
     height: 1px;
     border-radius: 260px;
-    background-color: white;
+    background: linear-gradient(-45deg, #ffffff, #ffa4c6, #b1ebff, #b0ffeb);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     transform-origin: center center;
     transition: transform 0.6s ease;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dots.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dots.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dots.css" beforeDir="false" afterPath="$PROJECT_DIR$/dots.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dots.js" beforeDir="false" afterPath="$PROJECT_DIR$/dots.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,8 @@
       <workItem from="1632958252722" duration="614000" />
       <workItem from="1632961312644" duration="594000" />
       <workItem from="1632963123722" duration="594000" />
-      <workItem from="1633149118567" duration="321000" />
+      <workItem from="1633149118567" duration="1601000" />
+      <workItem from="1633152978740" duration="1781000" />
     </task>
     <servers />
   </component>
