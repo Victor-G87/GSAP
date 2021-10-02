@@ -1,6 +1,6 @@
 const grid = document.querySelector('.grid');
 const dotSize = 1;
-const padding = 40;
+const padding = 50;
 const sizes = [0, 0, 0, 0, 1.5, 1.5, 1.5, 1.5, 3, 4, 13];
 let animationReq;
 let increment = 0;
