@@ -4,6 +4,7 @@
     <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dots.css" beforeDir="false" afterPath="$PROJECT_DIR$/dots.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dots.html" beforeDir="false" afterPath="$PROJECT_DIR$/dots.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dots.js" beforeDir="false" afterPath="$PROJECT_DIR$/dots.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,11 @@
       <workItem from="1633171138773" duration="1780000" />
       <workItem from="1633172949054" duration="1347000" />
       <workItem from="1633315355626" duration="1783000" />
-      <workItem from="1633320503335" duration="319000" />
+      <workItem from="1633320503335" duration="419000" />
+      <workItem from="1633333736856" duration="1781000" />
+      <workItem from="1633335640493" duration="1781000" />
+      <workItem from="1633337496404" duration="1893000" />
+      <workItem from="1633339432669" duration="1116000" />
     </task>
     <servers />
   </component>

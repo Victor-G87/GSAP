@@ -8,14 +8,15 @@
     margin: 0;
 }
 
-.japan{
+.japans{
+    display: block;
     font-family: 'Noto Sans JP', sans-serif;
     color: #eaeef0;
-    position: absolute;
+    position: relative;
     z-index: 199;
     font-size: 6em;
     margin: auto;
-    top: 1em;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -25,10 +26,23 @@
     overflow: hidden;
     text-shadow: 0 14px 28px rgba(0,0,0,0.29), 0 10px 10px rgba(0,0,0,0.26);
     overflow: visible;
-
-
+    writing-mode: vertical-rl;
+    text-align: center;
 
 }
+
+.japan{
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    z-index: 199;
+}
+
+
+/*.slit-in-vertical ,.japan{animation:slit-in-vertical 0.7s ease-out both}*/
+
+/*@keyframes slit-in-vertical{0%{transform:translateZ(-800px) rotateY(90deg);opacity:0}54%{transform:translateZ(-160px) rotateY(87deg);opacity:1}100%{transform:translateZ(0) rotateY(0)}}*/
+
 
 
 .grid {
@@ -53,9 +67,13 @@
     z-index: 12;
     pointer-events: none;
 
+}
 
-
-
+@keyframes movement_two
+{
+    0%,
+    500% { transform: none; }
+    50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
 }
 
 
@@ -97,6 +115,8 @@
         transform: translateX(-1500px) translateY(-1500px) rotate(45deg);
     }
 }
+
+
 .line1 {
     height: 240px;
     background: #f5be55;
