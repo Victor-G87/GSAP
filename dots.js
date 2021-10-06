@@ -124,7 +124,7 @@ function setTransition(event) {
 
 /////////// typewriter /////////////////////
 
-const words = ["集 合 的 無 意 識","Welcome...", "to", "The", "集 合 的 無 意 識"]
+const words = ["集 合 的 無 意 識","Welcome...", "to", "The Collective Unconscious", "集 合 的 無 意 識"]
 
 let cursor = gsap.to('.cursor', {opacity:0, ease: "power2.inOut", repeat:-1})
 let masterTl = gsap.timeline({repeat: -1}).pause()
@@ -139,6 +139,8 @@ words.forEach(word => {
     tl.to('.text', {duration: 1, text: word})
     masterTl.add(tl)
 })
+
+
 
 
 
