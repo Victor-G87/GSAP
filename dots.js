@@ -1,7 +1,7 @@
 const grid = document.querySelector('.grid');
 const dotSize = 1;
-const padding = 50;
-const sizes = [0, 0, 0, 0, 1.5, 1.5, 1.5, 1.5, 3, 4, 7];
+const padding = 60;
+const sizes = [0, 0, 0, 0, 1.5, 1.5, 1.5, 1.5, 3, 4, 10];
 let animationReq;
 let increment = 0;
 let dots = [];
@@ -68,8 +68,8 @@ function animateGrid() {
 
 const tiltEffectSettings = {
     max: 15, // max tilt rotation (degrees (deg))
-    perspective: 1000, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
-    scale: 1.1, // transform scale - 2 = 200%, 1.5 = 150%, etc..
+    perspective: 700, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
+    scale: 1, // transform scale - 2 = 200%, 1.5 = 150%, etc..
     speed: 500, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
     easing: "cubic-bezier(.03,.98,.52,.99)" // easing (transition-timing-function) of the enter/exit transition
 };
@@ -118,6 +118,28 @@ function setTransition(event) {
         card.style.transition = "";
     }, tiltEffectSettings.speed);
 }
+
+
+
+
+/////////// typewriter /////////////////////
+
+const words = ["Welcome...", "to", "The", "集 合 的 無 意 識"]
+
+let cursor = gsap.to('.cursor', {opacity:0, ease: "power2.inOut", repeat:-1})
+let masterTl = gsap.timeline({repeat: -1}).pause()
+let boxTl = gsap.timeline()
+
+boxTl.to('.box', {duration:1, width:"17vw", delay: 0.5, ease: "power4.inOut"})
+    .from('.hi', {duration:1, y:"7vw", ease: "power3.out"})
+    .to('.box', {duration:1, height:"7vw", ease: "elastic.out", onComplete: () => masterTl.play() })
+    .to('.box', {duration:2, autoAlpha:0.7, yoyo: true, repeat: -1, ease:"rough({ template: none.out, strength:  1, points: 20, taper: 'none', randomize: true, clamp: false})"})
+words.forEach(word => {
+    let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay:1})
+    tl.to('.text', {duration: 1, text: word})
+    masterTl.add(tl)
+})
+
 
 
 

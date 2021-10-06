@@ -8,13 +8,25 @@
     margin: 0;
 }
 
+.hi{
+    position: absolute;
+    z-index: 200;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+}
+
 .japans{
     display: block;
     font-family: 'Noto Sans JP', sans-serif;
     color: #eaeef0;
     position: relative;
     z-index: 199;
-    font-size: 6em;
+    font-size: 7rem;
     margin: auto;
     top: 0;
     right: 0;
@@ -119,14 +131,14 @@
 
 .line1 {
     height: 240px;
-    background: #f5be55;
-    width: 900px;
+    background: #e1ab2d;
+    width: 600px;
     position: absolute;
     top: 60px;
     bottom: 60px;
     opacity: 0;
     animation-name: moveDown;
-    animation-duration: 9s;
+    animation-duration: 29s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     z-index: 9;
@@ -138,15 +150,15 @@
 
 .line1-1 {
     height: 240px;
-    background: #C8E6C9;
-    width: 300px;
+    background: #6d3eff;
+    width: 700px;
     position: absolute;
     left: 60px;
     bottom: 60px;
     opacity: 0;
     animation-name: moveDown;
-    animation-duration: 10s;
-    animation-delay: 0s;
+    animation-duration: 15s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     z-index: 9;
     border-bottom-left-radius: 180px;
@@ -157,15 +169,15 @@
 
 .line2 {
     height: 240px;
-    background: #7f99ff;
-    width: 800px;
+    background: #1c558c;
+    width: 500px;
     position: absolute;
     left: 0px;
-    bottom: 0px;
+    bottom: 30px;
     opacity: 0;
     animation-name: moveUp;
     animation-duration: 15s;
-    animation-delay: 0s;
+    animation-delay: 3s;
     animation-iteration-count: infinite;
     z-index: 9;
     border-bottom-left-radius: 180px;
@@ -176,14 +188,14 @@
 
 .line2-2 {
     height: 240px;
-    background: #ff80fa;
-    width: 700px;
+    background: #e0aa2d;
+    width: 400px;
     position: absolute;
     left: 0px;
     bottom: 0px;
     opacity: 0;
     animation-name: moveUp;
-    animation-duration: 12s;
+    animation-duration: 18s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
     z-index: 9;
@@ -195,14 +207,14 @@
 
 .line3 {
     height: 240px;
-    background: #82ff86;
-    width: 600px;
+    background: #2a9e6f;
+    width: 500px;
     position: absolute;
-    top: -60px;
+    top: -30px;
     bottom: -60px;
     opacity: 0;
     animation-name: moveDown;
-    animation-duration: 10s;
+    animation-duration: 16s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     z-index: 9;
@@ -216,14 +228,14 @@
 
 .line3-3 {
     height: 280px;
-    background: #faf7f6;
-    width: 500px;
+    background: #d01f56;
+    width: 800px;
     position: absolute;
-    top: -60px;
+    top: -40px;
     bottom: -60px;
     opacity: 0;
     animation-name: moveDown;
-    animation-duration: 40s;
+    animation-duration: 20s;
     animation-delay: 4s;
     animation-iteration-count: infinite;
     z-index: 9;
@@ -257,4 +269,43 @@
     z-index: 11;
     pointer-events: none;
 
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: #00050a;
+    color: #eeeeee;
+}
+
+h1 {
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+    padding-left: 15vw;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+h1 .hi {
+    display: inline-block;
+}
+
+h1 .text {
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: normal;
+    padding-left: 1.2vw;
+}
+
+h1 .box {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    background: #2800ad;
+    height: 1vw;
+    z-index: 1000;
 }
