@@ -20,13 +20,13 @@
     height: 100vh;
 }
 
-.japans{
-    display: block;
+.text{
+    display: grid;
     font-family: 'Noto Sans JP', sans-serif;
     color: #eaeef0;
     position: relative;
     z-index: 199;
-    font-size: 7rem;
+    /*font-size: 7rem;*/
     margin: auto;
     top: 0;
     right: 0;
@@ -35,10 +35,10 @@
     width: 100px;
     height: 100vh;
     border-radius: 3px;
-    overflow: hidden;
+
     text-shadow: 0 14px 28px rgba(0,0,0,0.29), 0 10px 10px rgba(0,0,0,0.26);
     overflow: visible;
-    writing-mode: vertical-rl;
+    /*writing-mode: vertical-rl;*/
     text-align: center;
 
 }
@@ -295,17 +295,11 @@ h1 .hi {
     display: inline-block;
 }
 
-h1 .text {
-    font-family: 'Source Code Pro', sans-serif;
-    font-weight: normal;
-    padding-left: 1.2vw;
-}
-
 h1 .box {
     position: absolute;
     bottom: 0;
     display: inline-block;
-    background: #2800ad;
+    background: transparent;
     height: 1vw;
     z-index: 1000;
 }
