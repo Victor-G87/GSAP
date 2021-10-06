@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SVG/ghost.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrw.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dots.css" beforeDir="false" afterPath="$PROJECT_DIR$/dots.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dots.html" beforeDir="false" afterPath="$PROJECT_DIR$/dots.html" afterDir="false" />
@@ -139,6 +137,10 @@
       <workItem from="1633511558754" duration="1887000" />
       <workItem from="1633513478053" duration="1944000" />
       <workItem from="1633515452490" duration="1698000" />
+      <workItem from="1633517327687" duration="1875000" />
+      <workItem from="1633519298270" duration="1779000" />
+      <workItem from="1633521107126" duration="1777000" />
+      <workItem from="1633522915904" duration="319000" />
     </task>
     <servers />
   </component>

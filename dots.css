@@ -8,42 +8,32 @@
     margin: 0;
 }
 
-.text{
-    display: grid;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #eaeef0;
-    position: relative;
-    z-index: 199;
-    /*font-size: 7rem;*/
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 100vh;
-    border-radius: 3px;
+/*.text .cursor{*/
+/*    display: flex;*/
+/*    font-family: 'Noto Sans JP', sans-serif;*/
+/*    color: #eaeef0;*/
+/*    position: relative;*/
+/*    z-index: 199;*/
+/*    !*font-size: 7rem;*!*/
+/*    margin: auto;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    width: 100px;*/
+/*    height: 100vh;*/
+/*    border-radius: 3px;*/
 
-    text-shadow: 0 14px 28px rgba(0,0,0,0.29), 0 10px 10px rgba(0,0,0,0.26);
-    overflow: visible;
-    /*writing-mode: vertical-rl;*/
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+/*    text-shadow: 0 14px 28px rgba(0,0,0,0.29), 0 10px 10px rgba(0,0,0,0.26);*/
+/*    overflow: visible;*/
+/*    !*writing-mode: vertical-rl;*!*/
+/*    text-align: center;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
 
-}
-
-.cursor{
-    display: inline;
-}
+/*}*/
 
 
-.japan{
-    width:100vw;
-    height:100vh;
-    position: absolute;
-    z-index: 199;
-}
 
 
 /*.slit-in-vertical ,.japan{animation:slit-in-vertical 0.7s ease-out both}*/
@@ -274,19 +264,12 @@ body {
     min-height: 100vh;
     background: #00050a;
     color: #eeeeee;
-}
-
-h1 {
-    position: relative;
-    font-family: Lato, sans-serif;
-    font-size: 7vw;
-    font-weight: bold;
-    /*padding-left: 15vw;*/
-    overflow: hidden;
-    z-index: 1000;
 
 
 }
+
+
+
 
 .hi {
     z-index: 200;
@@ -304,3 +287,40 @@ h1 {
     flex-direction: row;
 }
 
+h1  {
+    position: absolute;
+    left: 10%;
+    font-family: Lato, sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+    overflow: visible;
+    z-index: 1000;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.29), 0 10px 10px rgba(0,0,0,0.26);
+    width:20%;
+
+
+}
+
+/*.cursor{*/
+
+/*    left: 10%;*/
+/*    font-family: Lato, sans-serif;*/
+/*    font-size: 7vw;*/
+/*    font-weight: bold;*/
+/*    overflow: visible;*/
+/*    z-index: 1000;*/
+/*    text-shadow: 0 14px 28px rgba(0,0,0,0.29), 0 10px 10px rgba(0,0,0,0.26);*/
+/*    width:100%;*/
+/*}*/
+
+
+.japan{
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    z-index: 199;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    align-items: center;
+}
