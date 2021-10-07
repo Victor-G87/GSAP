@@ -124,7 +124,7 @@ function setTransition(event) {
 
 /////////// typewriter /////////////////////
 
-const words = ["Welcome...", "to", "The Collective Unconscious", "/kəˈlektiv ˌənˈkänSHəs/"]
+const words = ["Welcome to...", "The Collective Unconscious", "/kəˈlektiv ˌənˈkänSHəs/"]
 
 
 let cursor = gsap.to('.cursor', {opacity:0, ease: "power2.inOut", repeat:-1})
@@ -137,7 +137,7 @@ boxTl.to('.box', {duration:1, width:"17vw", delay: 0.5, ease: "power4.inOut"})
     .to('.box', {duration:2, autoAlpha:0.7, yoyo: true, repeat: -1, ease:"rough({ template: none.out, strength:  1, points: 20, taper: 'none', randomize: true, clamp: false})"})
 words.forEach(word => {
     let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay:1})
-    tl.to('.text', {duration: 1, text: word})
+    tl.to('.text', {duration: 2, text: word})
     masterTl.add(tl)
 
 
