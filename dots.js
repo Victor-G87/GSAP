@@ -68,9 +68,9 @@ function animateGrid() {
 
 const tiltEffectSettings = {
     max: 15, // max tilt rotation (degrees (deg))
-    perspective: 700, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
+    perspective: 7000, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
     scale: 1, // transform scale - 2 = 200%, 1.5 = 150%, etc..
-    speed: 500, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
+    speed: 1500, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
     easing: "cubic-bezier(.03,.98,.52,.99)" // easing (transition-timing-function) of the enter/exit transition
 };
 
@@ -124,7 +124,8 @@ function setTransition(event) {
 
 /////////// typewriter /////////////////////
 
-const words = ["集 合 的 無 意 識 ","Welcome...", "to", "The Collective Unconscious", "/kəˈlektiv ˌənˈkänSHəs/"]
+const words = ["Welcome...", "to", "The Collective Unconscious", "/kəˈlektiv ˌənˈkänSHəs/"]
+
 
 let cursor = gsap.to('.cursor', {opacity:0, ease: "power2.inOut", repeat:-1})
 let masterTl = gsap.timeline({repeat: -1}).pause()
@@ -138,10 +139,18 @@ words.forEach(word => {
     let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay:1})
     tl.to('.text', {duration: 1, text: word})
     masterTl.add(tl)
+
+
 })
 
+    const wordsTwo = ["集 合 的 無 意 識"]
 
+    wordsTwo.forEach(word => {
+        let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1})
+        tl.to('.center', {duration: 1, text: word})
+        masterTl.add(tl)
 
+    })
 
 
 
