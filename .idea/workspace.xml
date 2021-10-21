@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="" />
+    <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distortion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/map1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/map2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/map3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquidDistortion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rgbKineticSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -147,6 +164,47 @@
       <workItem from="1633611666295" duration="2167000" />
       <workItem from="1633617374495" duration="1304000" />
       <workItem from="1633632157422" duration="1474000" />
+      <workItem from="1633751620669" duration="914000" />
+      <workItem from="1634015158672" duration="873000" />
+      <workItem from="1634190215350" duration="595000" />
+      <workItem from="1634192742711" duration="595000" />
+      <workItem from="1634194658734" duration="594000" />
+      <workItem from="1634221321755" duration="594000" />
+      <workItem from="1634319188795" duration="593000" />
+      <workItem from="1634321055066" duration="593000" />
+      <workItem from="1634323025116" duration="593000" />
+      <workItem from="1634324831258" duration="594000" />
+      <workItem from="1634326644379" duration="594000" />
+      <workItem from="1634329121507" duration="593000" />
+      <workItem from="1634330933481" duration="593000" />
+      <workItem from="1634332741750" duration="593000" />
+      <workItem from="1634334551565" duration="593000" />
+      <workItem from="1634336361084" duration="593000" />
+      <workItem from="1634338205024" duration="593000" />
+      <workItem from="1634340020949" duration="593000" />
+      <workItem from="1634346044473" duration="594000" />
+      <workItem from="1634347852732" duration="594000" />
+      <workItem from="1634349667152" duration="593000" />
+      <workItem from="1634351473970" duration="593000" />
+      <workItem from="1634353286599" duration="594000" />
+      <workItem from="1634355193264" duration="593000" />
+      <workItem from="1634357119571" duration="593000" />
+      <workItem from="1634360285914" duration="593000" />
+      <workItem from="1634362099994" duration="594000" />
+      <workItem from="1634363988895" duration="1204000" />
+      <workItem from="1634366284824" duration="593000" />
+      <workItem from="1634368099118" duration="594000" />
+      <workItem from="1634370056696" duration="595000" />
+      <workItem from="1634377186037" duration="595000" />
+      <workItem from="1634379002105" duration="595000" />
+      <workItem from="1634403952434" duration="595000" />
+      <workItem from="1634405877199" duration="595000" />
+      <workItem from="1634407690880" duration="595000" />
+      <workItem from="1634409498498" duration="595000" />
+      <workItem from="1634411644316" duration="595000" />
+      <workItem from="1634413464241" duration="595000" />
+      <workItem from="1634415450111" duration="595000" />
+      <workItem from="1634788631592" duration="787000" />
     </task>
     <servers />
   </component>
