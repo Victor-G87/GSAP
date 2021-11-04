@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lscript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweenMax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distortion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/map1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/map2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/map3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liquidDistortion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pixi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rgbKineticSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +187,7 @@
       <workItem from="1634411644316" duration="595000" />
       <workItem from="1634413464241" duration="595000" />
       <workItem from="1634415450111" duration="595000" />
-      <workItem from="1634788631592" duration="787000" />
+      <workItem from="1634788631592" duration="1596000" />
     </task>
     <servers />
   </component>
