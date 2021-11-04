@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'FUNCTION';
+    src: url('./dist/FUNCTION-Condensed_071918.woff') format('woff2'),
+    url('./dist/FUNCTION-Condensed_071918.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'FUNCTION', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10rem;
+}

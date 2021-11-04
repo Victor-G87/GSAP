@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="" />
+    <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pizza.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pizza.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pizza.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,12 +43,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\psyko\IdeaProjects\GSAP\dist" />
       <recent name="C:\Users\psyko\IdeaProjects\GSAP" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -188,6 +194,7 @@
       <workItem from="1634413464241" duration="595000" />
       <workItem from="1634415450111" duration="595000" />
       <workItem from="1634788631592" duration="1596000" />
+      <workItem from="1636016958023" duration="1342000" />
     </task>
     <servers />
   </component>
