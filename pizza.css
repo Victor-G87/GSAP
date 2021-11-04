@@ -16,4 +16,9 @@ h1{
     font-weight: normal;
     font-style: normal;
     font-size: 10rem;
+    color: black;
+    -webkit-text-stroke-color:black ;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-fill-color: white;
+
 }
