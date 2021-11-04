@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'FUNCTION';
+	src: url('dist/FUNCTION-Condensed_071918.woff') format('woff2'),
+	url('dist/FUNCTION-Condensed_071918.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1{
+
+
+}
+
+body {
+	margin: 0;
+	font-family: 'FUNCTION', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10rem;
+	color: black;
+	-webkit-text-stroke-color: #ff2e2e;
+	-webkit-text-stroke-width: .1vw;
+	-webkit-text-fill-color: white;
+}
+
+section {
+	display: block;
+}
+
+.cb-tagreel {
+	position: relative;
+}
+
+.cb-tagreel-content {
+	padding: 200px 0;
+}
+
+.cb-tagreel-items {
+	margin: -58px 0;
+	overflow: hidden;
+	cursor: default;
+}
+
+.cb-tagreel-row {
+	display: flex;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.cb-tagreel-item {
+	position: relative;
+	line-height: 100%;
+	font-size: 3.75vw;
+	flex: 0 0 33%;
+	padding: 58px 0;
+	text-transform: uppercase;
+}
+
+.cb-tagreel-item.-stroke {
+	color: transparent;
+	text-shadow: none;
+	-webkit-text-stroke-color: #ff2e2e;
+	-webkit-text-stroke-width: .1vw;
+}
+
+.cb-tagreel-item span {
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+}

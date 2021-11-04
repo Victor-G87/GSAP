@@ -195,7 +195,7 @@
       <workItem from="1636016958023" duration="1777000" />
       <workItem from="1636018761529" duration="595000" />
       <workItem from="1636021311347" duration="809000" />
-      <workItem from="1636028351387" duration="1170000" />
+      <workItem from="1636028351387" duration="6195000" />
     </task>
     <servers />
   </component>
@@ -213,5 +213,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
