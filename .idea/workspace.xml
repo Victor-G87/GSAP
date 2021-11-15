@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99733b-0928-499e-9532-ef3ca2ff285a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JBS/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JBS/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JBS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hori/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hori/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hori/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/580b57fcd9996e24bc43c1e0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pizzaSlide/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pizzaSlide/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pizzaSlide/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +50,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JBS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\psyko\IdeaProjects\GSAP\JBS" />
+      <recent name="C:\Users\psyko\IdeaProjects\GSAP\pizzaSlide" />
+      <recent name="C:\Users\psyko\IdeaProjects\GSAP\img" />
+      <recent name="C:\Users\psyko\IdeaProjects\GSAP\hori" />
       <recent name="C:\Users\psyko\IdeaProjects\GSAP\dist" />
-      <recent name="C:\Users\psyko\IdeaProjects\GSAP" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -196,6 +208,57 @@
       <workItem from="1636018761529" duration="595000" />
       <workItem from="1636021311347" duration="809000" />
       <workItem from="1636028351387" duration="6195000" />
+      <workItem from="1636034797488" duration="716000" />
+      <workItem from="1636554902267" duration="892000" />
+      <workItem from="1636556713319" duration="1860000" />
+      <workItem from="1636562627431" duration="649000" />
+      <workItem from="1636567674683" duration="646000" />
+      <workItem from="1636574641130" duration="1479000" />
+      <workItem from="1636577078230" duration="1522000" />
+      <workItem from="1636578971892" duration="1787000" />
+      <workItem from="1636730890733" duration="1779000" />
+      <workItem from="1636732697486" duration="1612000" />
+      <workItem from="1636735020727" duration="1786000" />
+      <workItem from="1636736833617" duration="1783000" />
+      <workItem from="1636738649086" duration="1782000" />
+      <workItem from="1636740461951" duration="1818000" />
+      <workItem from="1636742309114" duration="1782000" />
+      <workItem from="1636744123291" duration="1784000" />
+      <workItem from="1636745966584" duration="1814000" />
+      <workItem from="1636747823545" duration="1793000" />
+      <workItem from="1636749644333" duration="1782000" />
+      <workItem from="1636751698214" duration="1782000" />
+      <workItem from="1636753509202" duration="1781000" />
+      <workItem from="1636755325751" duration="1774000" />
+      <workItem from="1636757134446" duration="1788000" />
+      <workItem from="1636758951715" duration="1898000" />
+      <workItem from="1636760877156" duration="1224000" />
+      <workItem from="1636763088917" duration="2259000" />
+      <workItem from="1636767955933" duration="1786000" />
+      <workItem from="1636769774921" duration="1785000" />
+      <workItem from="1636771589067" duration="1311000" />
+      <workItem from="1636773432109" duration="1478000" />
+      <workItem from="1636853226922" duration="1778000" />
+      <workItem from="1636855036066" duration="1784000" />
+      <workItem from="1636856849458" duration="1791000" />
+      <workItem from="1636859050847" duration="1784000" />
+      <workItem from="1636860872194" duration="2268000" />
+      <workItem from="1636863169301" duration="2199000" />
+      <workItem from="1636866129978" duration="1783000" />
+      <workItem from="1636867941951" duration="1821000" />
+      <workItem from="1636869792167" duration="1666000" />
+      <workItem from="1636871977316" duration="1782000" />
+      <workItem from="1636873877770" duration="1782000" />
+      <workItem from="1636875982920" duration="701000" />
+      <workItem from="1636881367695" duration="1631000" />
+      <workItem from="1636929254561" duration="1782000" />
+      <workItem from="1636931065164" duration="1783000" />
+      <workItem from="1636932890825" duration="595000" />
+      <workItem from="1636938253603" duration="761000" />
+      <workItem from="1636940349555" duration="1436000" />
+      <workItem from="1636947517808" duration="1232000" />
+      <workItem from="1636952943754" duration="2023000" />
+      <workItem from="1636980392684" duration="3103000" />
     </task>
     <servers />
   </component>
