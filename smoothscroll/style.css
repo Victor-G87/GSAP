@@ -1,0 +1,61 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  user-select: none;
+}
+html,
+body {
+  overscroll-behavior: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background-color: #e0e0e0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-wrap {
+  width: 30%;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.one {
+  background-color: peachpuff;
+}
+
+.two {
+  background-color: peru;
+}
+
+.three {
+  background-color: rgb(78, 117, 102);
+}
+
+
+
+#custom-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}

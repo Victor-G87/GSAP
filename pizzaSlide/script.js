@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ScrollToPlugin);
-gsap.registerPlugin(EasePack);
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollToPlugin);
+  gsap.registerPlugin(EasePack);
 
 ////////////////////////////////////////////////////// MARQUEE
 
@@ -62,15 +62,15 @@ gsap.registerPlugin(EasePack);
   function goToSection(section, anim, i) {
     if (scrolling.enabled) { // skip if a scroll tween is in progress
       scrolling.disable();
-    gsap.to(window, {
-      scrollTo: {y: section, autoKill: false},
-      onComplete: scrolling.enable,
-      // ease: "power2.inOut",
-      duration: 0.8
+      gsap.to(window, {
+        scrollTo: {y: section, autoKill: false},
+        onComplete: scrolling.enable,
+        ease: "power2.inOut",
+        duration: 1.4
 
-    });
+      });
 
-    anim && anim.restart();
+      anim && anim.restart();
     }
   }
 
@@ -91,37 +91,104 @@ gsap.registerPlugin(EasePack);
 
 
 
-gsap.to(".marquee__part", {
-  scrollTrigger: {
-    trigger: sections,
-    toggleActions: "restart none none none"
-  },
-  xPercent: -100,
-  repeat: -1,
-  duration: 220,
-  immediateRender: false,
-  start: "top bottom-=1",
-  end: "bottom top+=1",
-  ease: "none"});
+  gsap.to(".marquee__part", {
+    scrollTrigger: {
+      trigger: sections,
+      toggleActions: "restart none none none"
+    },
+    xPercent: -100,
+    repeat: -1,
+    duration: 220,
+    immediateRender: false,
+    start: "top bottom-=1",
+    end: "bottom top+=1",
+    ease: "none"});
 
 
 
 
-gsap.to(".marquee__part1", {
-  scrollTrigger: {
-    trigger: sections,
-    toggleActions: "restart none none none"
-  },
-  xPercent: 100,
-  repeat: -1,
-  duration: 240,
-  immediateRender: false,
-  start: "top bottom-=1",
-  end: "bottom top+=1",
-  ease: "none",
+  gsap.to(".marquee__part1", {
+    scrollTrigger: {
+      trigger: sections,
+      toggleActions: "restart none none none"
+    },
+    xPercent: 100,
+    repeat: -1,
+    duration: 240,
+    immediateRender: false,
+    start: "top bottom-=1",
+    end: "bottom top+=1",
+    ease: "none",
+  });
+
 });
 
+/////////////// BUTTON SLIDE////////////////
+
+
+$(document).ready(function(){
+  $('.left-to-right-effect').css({
+    'background-color': '#de5b3b',
+  });
+
 });
+// //
+// //
+$(document).ready(function() {
+  $(".button").click(function() {
+    $(this).addClass('clicked');
+  }).focusout(function() {
+    $(".button.on-click-effect").removeClass('clicked').css({
+      'background-color': '#ffffff',
+      // 'color': '#ffffff',
+
+    });
+  });
+});
+
+//
+// $(document).ready(function() {
+//   $(".button.on-click-effect").click(function() {
+//     $(this).addClass('clicked');
+//   }).focusout(function() {
+//     $(".button").removeClass('clicked');
+//   });
+// });
+
+// $(".left-to-right-effect").click(
+//     function() {
+//       $(".white-text").toggleClass("gray-text");
+//
+//       // $(".cross-btn").toggleClass("enCross");
+//       //
+//       // $('.menu-panel').toggleClass('showPanel');
+//     }
+// );
+$(document).ready(function(){
+  $(".right-to-left-effect").click(function(){
+    $(".left-to-right-effect").toggleClass("gray-text");
+  });
+});
+
+
+$(document).ready(function(){
+  $(".right-to-left-effect").click(function(){
+    $(".left-to-right-effect").toggleClass("gray-text");
+
+  });
+});
+
+$('.right-to-left-effect').click(function(){
+
+  $('pizza-wrap').attr('class',$(this).attr('class').split(' ')[1]);
+});
+
+
+
+
+
+
+
 
 
 
@@ -155,8 +222,8 @@ gsap.to(".marquee__part1", {
 
 
 
-    // let tween = gsap.to(".marquee__part", {xPercent: -100, repeat: -1, duration: 100, ease: "linear"}).totalProgress(0.5);
-    // let tweenOne = gsap.to(".marquee__part1", {xPercent: 100, repeat: -1, duration: 120, ease: "linear"}).totalProgress(0.5);
+// let tween = gsap.to(".marquee__part", {xPercent: -100, repeat: -1, duration: 100, ease: "linear"}).totalProgress(0.5);
+// let tweenOne = gsap.to(".marquee__part1", {xPercent: 100, repeat: -1, duration: 120, ease: "linear"}).totalProgress(0.5);
 
 
 
@@ -188,10 +255,41 @@ gsap.to(".marquee__part1", {
 // });
 
 
+// let bgHead = document.getElementById('bgHead');
+// let btn1 = document.getElementById('btn1');
+// let btn2 = document.getElementById('btn2');
+//
+// let btn3 = document.getElementById('marqueewrap');
+//
+//
+//
+// btn1.addEventListener('click', function() {
+//   bgHead.style.backgroundColor = "#de5b3b";
+//   btn3.style.webkitTextStrokeColor = "#de5b3b";
+//
+// });
+//
+// btn2.addEventListener('click', function() {
+//   bgHead.style.backgroundColor = "#44C7C5";
+//   btn3.style.webkitTextStrokeColor = "#44C7C5";
+// });
 
 
+$(document).ready(function () {
 
+  $("#btn1").click(function(){
+    $("main").css("background-color", "#de5b3b");
+    $(".marqueewrap").css("webkitTextStrokeColor","#de5b3b");
+    $(".teal-button").css("background-color","#44C7C5");
+  });
 
+  $("#btn2").click(function(){
+    $("#bgHead").css("background-color", "#44C7C5");
+    $(".marqueewrap").css("webkitTextStrokeColor","#44C7C5");
+    $(".teal-button").css("background-color","#de5b3b");
+  });
+
+});
 
 
 

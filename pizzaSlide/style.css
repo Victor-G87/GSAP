@@ -1,36 +1,42 @@
+/**, *:after, *:before {*/
+/*	-webkit-box-sizing: border-box;*/
+/*	-moz-box-sizing: border-box;*/
+/*	box-sizing: border-box;*/
+/*}*/
 
-*, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-
-
-body {
-	overflow-x: hidden;
+*{
 
 }
+
+/*body {*/
+/*	overflow-x: hidden;*/
+
+/*}*/
+/*main{*/
+/*	!*transition:all 1.0s ease;*!*/
+
+/*	transition:  1s ease;*/
+/*}*/
 
 
 main {
-	/*background-color: #de5b3b;*/
-	background: url('https://pizzapatron-amgdevelopers.codeanyapp.com/wp-content/themes/patron/dist/img/orange-texture-bg.02.jpg') repeat 50%/400px 200px;
-	background-attachment: fixed;
-	/*background-repeat: repeat;*/
+
+	background-color: #de5b3b;
+	/*background-image: url('https://pizzapatron-amgdevelopers.codeanyapp.com/wp-content/themes/patron/dist/img/orange-texture-bg.02.jpg');*/
+	transition:all 1.4s ease;
 }
 
 /*section:after {*/
-/*	position: fixed;*/
-/*	left: 0;*/
-/*	top: 0;*/
-/*	width: 100%;*/
-/*	height: 100%;*/
+/* position: fixed;*/
+/* left: 0;*/
+/* top: 0;*/
+/* width: 100%;*/
+/* height: 100%;*/
 /*}*/
 
 /*section:after {*/
-/*	content: "";*/
-/*	background: url('https://art4globalgoals.com/images/bg/bg_texture.png') repeat 10%/200px 200px;*/
+/* content: "";*/
+/* background: url('https://art4globalgoals.com/images/bg/bg_texture.png') repeat 10%/200px 200px;*/
 /*}*/
 
 
@@ -46,28 +52,28 @@ footer {
 	width: 100%;
 }
 /*.width-0{*/
-/*	width: 0;*/
+/* width: 0;*/
 /*}*/
 /*.width-33{*/
-/*	width: 33.33%;*/
+/* width: 33.33%;*/
 /*}*/
 /*.width-66{*/
-/*	width: 66.66%;*/
+/* width: 66.66%;*/
 /*}*/
 /*.width-100{*/
-/*	width: 100%;*/
+/* width: 100%;*/
 /*}*/
 /*#landing-page .full-col{*/
-/*	background-color: grey;*/
+/* background-color: grey;*/
 /*}*/
 /*#rooms .left-col{*/
-/*	background-color: red;*/
+/* background-color: red;*/
 /*}*/
 /*#rooms .right-col{*/
-/*	background-color: pink;*/
+/* background-color: pink;*/
 /*}*/
 .hero-story .middle-col{
-	background-color: transparent;
+	/*background-color: transparent;*/
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -76,7 +82,7 @@ footer {
 .hero-story .middle-col{
 	/*background-color: #de5b3b;*/
 	/*background-image: url('https://pizzapatron-amgdevelopers.codeanyapp.com/wp-content/themes/patron/dist/img/orange-texture-bg.02.jpg');*/
-background-color: transparent;
+	background-color: transparent;
 }
 
 .right-col{
@@ -88,7 +94,9 @@ background-color: transparent;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
+
 }
+
 
 
 img {
@@ -99,7 +107,17 @@ img {
 	-webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 
+}
 
+img:after{
+	position: relative;
+	z-index: 91;
+	pointer-events: none;
+}
+
+img:after{
+	content: '';
+	background-image: url("/SVG/pizza.svg");
 }
 
 .slide-in-bottom , img {-webkit-animation:slide-in-bottom 0.4s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom 0.4s cubic-bezier(.25,.46,.45,.94) both}
@@ -108,40 +126,17 @@ img {
 
 
 /*#near .right-col{*/
-/*	background-color: blue;*/
+/* background-color: blue;*/
 /*}*/
 /*#near .left-col{*/
-/*	background-color: lightblue;*/
+/* background-color: lightblue;*/
 /*}*/
 footer{
 	background-color:  black;
 	color:  white;
 }
-
-
-.marqueewrap {
+#marqueewrap{
 	height: 100vh;
-}
-
-
-.marquee__part {
-	flex-shrink: 0;
-	padding: 0 4px;
-	/*font-smooth: always;*/
-	will-change: transform;
-
-}
-
-.marquee__part1 {
-	flex-shrink: 0;
-	padding: 0 4px;
-	/*font-smooth: always;*/
-	will-change: transform;
-}
-
-.marquee {
-	position: relative;
-	overflow: hidden;
 	margin-bottom: -25px;
 	margin: 0;
 	font-family: 'FUNCTION', sans-serif;
@@ -152,8 +147,36 @@ footer{
 	-webkit-text-stroke-color: #ff2e2e;
 	-webkit-text-stroke-width: .1vw;
 	-webkit-text-fill-color: white;
-	overflow: hidden;
+
 	line-height: 10rem;
+
+
+}
+
+.marqueewrap {
+	/*transition:all 1.4s ease;*/
+}
+
+
+.marquee__part {
+	flex-shrink: 0;
+	padding: 0 4px;
+	/*font-smooth: always;*/
+
+
+}
+
+.marquee__part1 {
+	flex-shrink: 0;
+	padding: 0 4px;
+	/*font-smooth: always;*/
+
+}
+
+.marquee {
+	position: relative;
+	overflow: hidden;
+
 
 }
 
@@ -255,4 +278,97 @@ hr {
 	pointer-events: none;
 	width: 72%;
 	top: 94%;
+}
+
+.center-aligned {
+	/*width: 100%;*/
+	/*min-height: 100vh;*/
+	display: flex;
+
+	/*justify-content: center;*/
+	align-items: center;
+	text-align: center;
+	padding-left: 10.9vw;
+	position: fixed;
+	top: 4rem;
+	box-sizing: content-box;
+	z-index: 10;
+
+}
+
+.left-to-right-effect{
+
+}
+
+.right-to-left-effect{
+
+}
+
+.button {
+	display: inline-block;
+	background: #ffffff;
+	/*color: #919191;*/
+	/*color: #ffffff;*/
+	padding: 17px 37px;
+	margin: 0 -1px;
+	border: 7px solid white;
+	position: relative;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'FUNCTION', sans-serif;
+	font-size: 2rem;
+	letter-spacing: 0.2px;
+	z-index: 1;
+	transition: all 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+	text-decoration: none;
+}
+
+.on-click-effect.left-to-right-effect::after {
+	left: -100%;
+	background-color: #de5b3b;
+}
+
+.on-hover-effect::after,
+.on-click-effect::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0;
+	background: #38c0bf;
+	z-index: -1;
+	transition: all 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.on-click-effect.clicked {
+	color: white;
+}
+
+.left-to-right-effect{
+	color: #ffffff;
+}
+
+.right-to-left-effect{
+	color: #919191;
+}
+
+
+
+/* ON CLICK - LEFT TO RIGHT EFFECT */
+.on-click-effect.left-to-right-effect::after { left: -100%; }
+.on-click-effect.left-to-right-effect.clicked::after { left: 0; }
+
+
+/* ON CLICK - RIGHT TO LEFT EFFECT */
+.on-click-effect.right-to-left-effect::after { left: 100%; }
+.on-click-effect.right-to-left-effect.clicked::after { left: 0; }
+
+.white-text{
+	color: #919191;
+}
+
+.gray-text{
+	color: #ffffff;
 }
